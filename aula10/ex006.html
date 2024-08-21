@@ -17,17 +17,20 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">Interaja</div>
+    <div id="area">Interaja</div>
 
     <script>
         var a = document.getElementById('area')
+        a.addEventListener('click', clicar) 
+        a.addEventListener('mouseenter', entrar) 
+        a.addEventListener('mouseout', saiu)
 
         function clicar() {
             a.innerText = 'Clicou'
             a.style.background = 'red'
         }
 
-        function  entrar() {
+        function entrar() {
             a.innerText = 'Entrou'
             a.style.background = 'blue'
         }
@@ -39,5 +42,3 @@
     </script>
 </body>
 </html>
-
-17:37 minutos
