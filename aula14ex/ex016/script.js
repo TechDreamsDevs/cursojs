@@ -4,10 +4,9 @@ function contar() {
    var passo = document.getElementById('txtp')
    var res = document.getElementById('res')
 
-   if (ini.value.lenght == 0 || fim.value.length == 0 || passo.value.lenght == 0){
+   if (ini.value.lenght == 0 || fim.value.length == 0 || passo.value.lenght == 0) {
     window.alert('[ERRO] Faltam dados')
-    res.innerHTML = 'Impossível contar'
-    
+    res.innerHTML = 'Impossível contar'    
 
     } else { 
         res.innerHTML = 'Contando: <br>'
